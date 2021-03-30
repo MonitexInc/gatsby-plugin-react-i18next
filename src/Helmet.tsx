@@ -5,7 +5,7 @@ import {useI18next} from './useI18next';
 export const Helmet: React.FC<HelmetProps> = ({children, ...props}) => {
   const {languages, language, originalPath, defaultLanguage, siteUrl = ''} = useI18next();
   const createUrlWithLang = (lng: string) => {
-    const url = `${siteUrl}${lng === defaultLanguage ? '' : `/${lng}`}${originalPath}`;
+    const url = `${siteUrl}/${lng}${originalPath}`;
     return url.endsWith('/') ? url : `${url}/`;
   };
   return (

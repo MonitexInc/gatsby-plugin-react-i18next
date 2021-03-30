@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-react-i18next",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Easily translate your Gatsby website into multiple languages",
   "main": "index.js",
   "types": "index.d.ts",
@@ -72,7 +72,7 @@
   "peerDependencies": {
     "gatsby": "^2.2.0",
     "i18next": "^19.4.5",
-    "react": "^16.12.0",
+    "react": "^16.x || ^17.x",
     "react-i18next": "^11.5.0"
   },
   "optionalDependencies": {
